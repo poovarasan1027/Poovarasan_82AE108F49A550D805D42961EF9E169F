@@ -1,19 +1,10 @@
-# Python program to find the factorial of a number provided by the user.
-
-# change the value for a different result
-num = 10
-
-# To take input from the user
-#num = int(input("Enter a number: "))
-
-factorial = 1
-
-# check if the number is negative, positive or zero
-if num < 0:
-   print("Sorry, factorial does not exist for negative numbers")
-elif num == 0:
-   print("The factorial of 0 is 1")
-else:
-   for i in range(1,num + 1):
-       factorial = factorial*i
-   print("The factorial of",num,"is",factorial)
+#write a program that determines whether a year entered by the user is a leap year or not using if-elif-else statements.
+def CheckLeap(Year):
+  if((Year % 400==0) or
+   (Year % 100 !=0) and
+   (Year % 4 ==0)):
+    print("Given year is a leap year");
+  else:
+   print("Given year i#s not a leap year");
+Year = int(input("Enter the number:"))
+CheckLeap(Year)
